@@ -9,4 +9,5 @@ fi
 
 javac $FILE
 RESULT=$(echo $FILE | cut -d '.' -f 1)
-java $RESULT 
+java $RESULT
+rm "$RESULT.class"
